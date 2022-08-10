@@ -1,3 +1,4 @@
+# 예제 3-1-응용. 거스름돈
 # 수행 시간 측정
 import time
 start_time = time.time() # 측정 시작
