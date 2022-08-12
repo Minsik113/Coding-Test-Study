@@ -1,1 +1,31 @@
-테스트
+----------------------------
+- 깃, 깃허브, 소스트리 연결
+----------------------------
+1. git 설치
+  - 구글에 git 오른쪽에 2.37.1 아래 download for Window 클릭
+  - 64-bit Git for Windows Setup.
+  - 참고블로그 https://iboxcomein.com/windows-git-install/
+2. github 가입
+  - 우리가 함께 사용할 repo -> https://github.com/Minsik113/Coding-Test-Study.git
+3. sourcetree설치
+  - 참고블로그 https://ux.stories.pe.kr/181
+  - 1.설치: https://www.sourcetreeapp.com/
+  - 2.아틀란티스 회원가입(구글로그인으로 가입함) -> 소스트리설치할때 필요한듯?
+  - 3.상단의 파일 메뉴 -> 복제 -> 소스경로: https://github.com/Minsik113/Coding-Test-Study.git -> 클론 버튼
+    - C:\Users\user\Documents\Coding-Test-Study 가 이제부터 공유폴더임. 
+4. 내 파일 공유하기(소스트리)
+  - 1. 폴더하나 만들기(폴더명 조민식) *처음 폴더 만들때만 하면됨.
+  - 2. 내 코드파일(ex, greedy_practice1.py) 생성
+  - 3. 소스트리에서 파일 상태 누르기
+  - 4. "스테이지에 올라가지 않은 파일"에서 남들과 공유하고 싶은 파일 + 누르면됨.
+  - 5. 아래 주석달기 ex_ 알고리즘 - greedy 1번문제
+  - 6. 오른쪽하단 '커밋'버튼 클릭
+  - 7. 상단에 패치 -> pull -> 'push' 누르기
+    - 패치 -> pull누르는 이유: 최신상태로 업데이트하는 것임.
+      - 항상 최신상태에서 내가 작성한 파일을 추가하는 느낌이라, 내가 올리려고 하는 사이에 다른사람이 올릴 수도 있음.
+      - push가 안된다면, 누군가 그 짧은 사이에 업데이트를 했다는 뜻. -> 패치 pull 다시하자.
+  - 주의할점
+    - 다른 사람폴더는 수정하면 안됨. 
+    - 자기 폴더에만 추가해야한다.
+    - 작업하기전에 최신상태 유지해주자 
+      - 코테 공부할거면 소스트리열고 패치 -> pull
