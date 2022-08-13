@@ -12,13 +12,13 @@ import time
 import heapq
 
 import random
-numbers = []
-for _ in range(2000000):
-    numbers.append(random.randint(1, 100))  # 1부터 100 사이의 임의의 정수
+# numbers = []
+# for _ in range(2000000):
+#     numbers.append(random.randint(1, 100))  # 1부터 100 사이의 임의의 정수
 
-start = time.time()
-# n = int(input()) 
-# numbers = list(map(int, input().split()))
+# start = time.time()
+n = int(input()) 
+numbers = list(map(int, input().split()))
 ans = 0 # 팀 수
 
 dict_number = dict()
@@ -47,6 +47,6 @@ while heap: # O(NlogN)
         else: # 팀못꾸렸다면 temp에 추가
             temp += num
 print(ans)
-end = time.time()
-print(f"{end - start:.5f} sec")
+# end = time.time()
+# print(f"{end - start:.5f} sec")
 
