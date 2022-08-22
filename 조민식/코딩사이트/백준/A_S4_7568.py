@@ -1,3 +1,11 @@
+'''
+날짜: 2022. 08. 16 
+시간복잡도: O(N^2)
+
+문제:
+풀이:
+'''
+
 n = int(input())
 
 info_menbers = [list(map(int, input().split())) for _ in range(n)]
@@ -11,6 +19,6 @@ for i in range(n):
         if prev[0] < now[0] and prev[1] < now[1]:
             k += 1 # 자신보다 큰 사람의 수 저장
     result.append(k+1)
-    
+
 for i in result:
     print(i,end=' ')
