@@ -1,5 +1,6 @@
 '''
 시간복잡도: O(NlogN) 
+공간복잡도: O(N)
 list comprehension이용
 '''
 from turtle import right
