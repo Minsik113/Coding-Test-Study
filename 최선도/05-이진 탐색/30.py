@@ -27,7 +27,7 @@
 # bit.ly/3BlXDiz trie 구조
 
 import sys
-# from pprint import pprint
+from pprint import pprint
 sys.setrecursionlimit(100001) # 재귀 제한 기본 1000번 -> 100001번
 
 def solution(words, queries):
@@ -38,7 +38,6 @@ def solution(words, queries):
         counted.append(len(w))
 
     trie = make_trie({}, words)   # 조건 a 의 trie
-    # pprint(trie)
     rev_trie = make_trie({}, rev_words)   # 조건 b 의 rev_trie 
 
     for query in queries:  # 3가지 조건으로 나누어서,
@@ -59,11 +58,12 @@ def make_trie(trie, words):
         for w in word:
             if w in node:
                 node = node[w]
-                node['!'].append(length) # why ? 
+                node['!'].append(length)
             else:
                 node[w] = {}
                 node = node[w]
                 node['!'] = [length]
+    pprint(trie)
     return trie
 
 
